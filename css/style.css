@@ -1,0 +1,75 @@
+* *::before *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Public Sans', sans-serif;
+
+  --gradient-main: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+
+/*custom button*/
+.btn-main{
+  border: none;
+  padding: 10px 22px;
+  border-radius: 25px;
+  background: var(--gradient-main);
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.btn-main:hover{
+  opacity: 0.8;
+}
+
+/*Navbar*/
+
+nav{
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a{
+  color: hsl(233, 8%, 62%);
+}
+
+nav a:hover{
+  color: hsl(233, 26%, 24%);
+  background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 3px;
+  animation-name: nav-link-underline;
+  animation-duration: 0.2s;
+}
+
+
+@media only screen and (max-width: 767px){ /*md breakpoint*/
+  /*Navbar*/
+
+  #request-invite-btn{
+    display: none;
+  }
+  #navbarSupportedContent{
+    text-align: center;
+  }
+  nav a{
+    color: hsl(233, 26%, 24%);
+  }
+  nav a:hover{ /*remove animation on mobile*/
+    background-image: none;
+    animation: none;
+    opacity: 0.7;
+  }
+}
+
+@keyframes nav-link-underline{ /*not available in mobile*/
+  0% {background-size: 0 3px}
+  25% {background-size: 25% 3px}
+  50% {background-size: 50% 3px}
+  75% {background-size: 75% 3px}
+  100% {background-size: 100% 3px}  
+}
