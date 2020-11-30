@@ -38,10 +38,34 @@
           <a class="nav-link" href="#">Careers</a>
         </li>
       </ul>
-      <button id="request-invite-btn" class="mr-lg-5 mx-md-auto btn-main">Request invite</button>
+      <button id="request-invite-btn-nav" class="mr-lg-5 mx-md-auto btn-main">Request invite</button>
     </div>
     
   </nav>
+
+  <section class="container-fluid" id="intro">
+    <div class="row">
+      <div id="intro-img-container" class="col-md-6 order-1 order-md-2">
+        <div id="image-bg-container">
+          <picture>
+            <source id="intro-img-mobile-background" media="(max-width:768px)" srcset="./images/bg-intro-mobile.svg">
+            <img id="intro-img-background" src="./images/bg-intro-desktop.svg" style="width:auto;">
+          </picture>
+        </div>
+        <div id="image-mockup-container">
+          <img id="image-mockup" src="./images/image-mockups.png" alt="">
+        </div>
+      </div>
+      <div id="intro-text-container" class="col-md-6 order-2 order-md-1">
+        <h1>Next generation digital banking</h1>
+        <p>
+          Take your financial life online. Your Easybank account will be a one-stop-shop 
+          for spending, saving, budgeting, investing, and much more.
+        </p>
+        <button class="btn-main">Request invite</button>
+      </div>
+    </div>
+  </section>
 
 
   <!--Bootstrap js bundle-->
