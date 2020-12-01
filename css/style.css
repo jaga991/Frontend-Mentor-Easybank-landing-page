@@ -12,6 +12,8 @@ html{
   overflow-x: hidden;
 }
 
+
+
 /*custom button*/
 .btn-main{
   border: none;
@@ -25,6 +27,23 @@ html{
 
 .btn-main:hover{
   opacity: 0.8;
+}
+
+h2{
+  font-weight: 400;
+}
+
+h3{
+  font-weight: 400;
+  font-size: 20px;
+}
+h4{
+  font-weight: 500;
+  font-size: 16px;
+}
+
+p{
+  color: hsl(233, 8%, 62%);
 }
 
 
@@ -111,7 +130,61 @@ nav a:hover{
 }
 
 
+/*why us*/
+#why-us{
+  padding: 50px 100px;
+  background-color: hsl(220, 16%, 96%);
+}
 
+.why-us-card{
+  padding: 20px;
+}
+
+
+/*latest article*/
+#latest-article{
+  padding: 50px 100px;
+  background-color: hsl(0, 0%, 98%);
+}
+#latest-article .card{
+  padding: 0;
+  margin: 0 15px;
+  border: none;
+}
+#latest-article .card:hover h4{
+  cursor: pointer;
+  color: hsl(233, 8%, 62%);
+}
+#latest-article .card:nth-of-type(1){
+  margin: 0 15px 0 0;
+}
+#latest-article .card img{
+  width: 100%;
+  height: 300px;
+}
+#latest-article .card p, h4{
+  padding: 5px 12px;
+}
+
+/*footer*/
+footer{
+  padding: 50px 100px;
+  background-color: hsl(233, 26%, 24%);
+  min-height: 170px;
+}
+footer a:hover svg path{
+  fill: hsl(136, 65%, 51%);
+}
+footer .row > div{
+  min-height: 80px;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
+footer a:hover{
+  color: hsl(136, 65%, 51%);
+}
 
 @media only screen and (max-width: 767px){ /*md breakpoint*/
   /*Navbar*/
@@ -169,6 +242,25 @@ nav a:hover{
   #intro-text-container h1{
     font-weight: 400;
   }
+
+  /*why us*/
+  #why-us{
+    margin-top: 210px;
+    padding-top: 100px;
+    text-align: center;
+  }
+
+
+  /*latest article*/
+  #latest-article{
+    padding: 50px 50px;
+    background-color: hsl(0, 0%, 98%);
+  }
+  #latest-article .card{
+    width: 100%;
+    margin: 50px 0;
+  }
+  
 }
 
 
